@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hover-ripple .mdc-radio::before {
+  opacity: 0; /* Hide the ripple effect by default */
+}
+
+.hover-ripple:hover .mdc-radio::before {
+  opacity: 1; /* Show the ripple effect on hover */
+}
+
+/* CSS */
+.overflow-scroll {
+  overflow-y: scroll; /* Ensure vertical scrollbar is present */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.overflow-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
